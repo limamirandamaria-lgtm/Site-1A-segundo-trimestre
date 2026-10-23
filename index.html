@@ -53,7 +53,7 @@
           <main>
               <article>
                 <img src="imagem.png" alt="uma ilustração de como Inari cuida e comanda suas raposas"
-              div class="artigo-autor">
+                div class="artigo-autor">
                   <h2>meu primeiro post.</h2>
                   <p> sejam bem vindos ao  site templo de inari </p>
                   <p class="artigo-autor"> Por: quinn tsukuroi.</p>
@@ -75,6 +75,17 @@
 
           </body>
 
+<script>
+  const botoes = document.querySelectorAll("main button");
+
+  botoes.forEach(function(botao) {
+    botao.addEventListener("click", function() {
+      console.log("fui clicado");
+      let texto = botao.querySelector("span");
+      texto.textContent++;
+    });
+  });
+</script>
 <script>
     const botao = document.querySelectorAll("main button");
     botoes.forEach(function(botao){
